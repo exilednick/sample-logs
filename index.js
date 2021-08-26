@@ -11,6 +11,9 @@ app.get('/err', async(req, res) => {
 
 app.get('/info', async(req, res) => {
     console.log("INFO: this is sample info")
+    res.json({
+        info: "sample"
+    })
 })
 
 app.listen(5000, () => console.log("INFO: server started"))
